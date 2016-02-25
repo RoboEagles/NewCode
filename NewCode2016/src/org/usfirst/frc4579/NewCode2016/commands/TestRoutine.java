@@ -67,7 +67,10 @@ public class TestRoutine extends Command {
     	// PERFORM SHOOTING TEST
     	System.out.println("***** SHOOTING TEST *****");
     	
-    	new ShootGroup();
+    	Command shootCmd = new ShootGroup();
+    	
+    	shootCmd.start();
+    	
     	Timer.delay(RobotMap.SHOOT_DELAY);
     	
     	System.out.println("***** SHOOTING TEST COMPLETE *****");
