@@ -12,7 +12,6 @@
 package org.usfirst.frc4579.NewCode2016.commands;
 
 import edu.wpi.first.wpilibj.command.Command;
-import org.usfirst.frc4579.NewCode2016.Robot;
 
 /**
  *
