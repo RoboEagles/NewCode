@@ -52,6 +52,7 @@ public class TestRoutine extends Command {
     	
     	
     	// LIFTER PID DIAGNOSTICS
+    	
     	Robot.lifter.enable();
     	
     	Robot.lifter.setSetpoint(testLiftSetpoint);
@@ -59,7 +60,7 @@ public class TestRoutine extends Command {
     	double liftPID_out = Robot.lifter.getPIDController().get();
     	double liftPID_err = Robot.lifter.getPIDController().getError();
     	
-    	System.out.println("\nLifter PID Initial Output: " + liftPID_out + " | Initial Error: " + liftPID_err + " | Initial Setpoint: " + testLiftSetpoint );
+    	System.out.println("\nLifter PID Initial Output: " + liftPID_out + " | Initial Error: " + liftPID_err + " | Initial Setpoint: " + testLiftSetpoint);
     	System.out.println("P: " + Robot.lifter.getPIDController().getP() + " I: " + Robot.lifter.getPIDController().getI() + " D:" + Robot.lifter.getPIDController().getD()+ "\n");
     	
     	Robot.lifter.disable();
@@ -89,7 +90,7 @@ public class TestRoutine extends Command {
     		
     	} else {
     		
-    		System.out.println(" SOLENOIDS NOT TESTED ");
+    		System.out.println(" SOLENOID NOT TESTED ");
     		
     	}
     	
