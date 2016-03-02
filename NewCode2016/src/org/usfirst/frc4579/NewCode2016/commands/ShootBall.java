@@ -38,22 +38,20 @@ public class ShootBall extends Command {
     }
 
     // Called just before this Command runs the first time
+
+    // Called just before this Command runs the first time
     protected void initialize() {
-    	
-    	setTimeout(RobotMap.SHOOT_DELAY);
-    	
     }
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
     	
-    	Robot.shooter.set(RobotMap.SHOOT_SPEED);
-    	
+    	Robot.shooter.set(1.0);
     }
 
     // Make this return true when this Command no longer needs to run execute()
     protected boolean isFinished() {
-        return isTimedOut();
+        return false;
     }
 
     // Called once after isFinished returns true
@@ -63,9 +61,7 @@ public class ShootBall extends Command {
     	
     }
 
-    // Called when another command which requires one or more of the same
-    // subsystems is scheduled to run
-    protected void interrupted() {
-    	end();
-    }
+	protected void interrupted() {
+		end();
+	}
 }

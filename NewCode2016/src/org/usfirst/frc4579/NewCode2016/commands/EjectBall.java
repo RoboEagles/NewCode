@@ -39,12 +39,15 @@ public class EjectBall extends Command {
 
     // Called just before this Command runs the first time
     protected void initialize() {
+    	
+
+    	
     }
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
     	
-    	Robot.loader.set(-RobotMap.LOAD_SPEED);
+    	Robot.loader.set(-1.0);
     	
     }
 
@@ -57,6 +60,7 @@ public class EjectBall extends Command {
     protected void end() {
     	
     	Robot.loader.stop();
+    	
     	
     }
 

@@ -142,9 +142,11 @@ public class Measurement extends Subsystem {
     	
     	for(int i = 0; i <= calibrationIterations; i++) {
     		
-    		sumX += mpu.read().getAccel().X;
-    		sumY += mpu.read().getAccel().Y;
-    		sumZ += mpu.read().getAccel().Z;
+    		mpu.read();
+    		
+    		sumX += mpu.getAccel().X;
+    		sumY += mpu.getAccel().Y;
+    		sumZ += mpu.getAccel().Z;
     		
     	}
     	

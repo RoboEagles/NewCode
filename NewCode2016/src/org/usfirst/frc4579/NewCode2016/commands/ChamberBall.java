@@ -41,7 +41,7 @@ public class ChamberBall extends Command {
     // Called just before this Command runs the first time
     protected void initialize() {
     	
-    	setTimeout(RobotMap.CHAMBER_DELAY);
+    	setTimeout(2.0);
     	
     }
 
@@ -53,7 +53,9 @@ public class ChamberBall extends Command {
 
     // Make this return true when this Command no longer needs to run execute()
     protected boolean isFinished() {
-        return isTimedOut();
+    	
+    	return isTimedOut();
+    	
     }
 
     // Called once after isFinished returns true
