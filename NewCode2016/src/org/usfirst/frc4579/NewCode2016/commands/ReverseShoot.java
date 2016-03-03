@@ -44,7 +44,7 @@ public class ReverseShoot extends Command {
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
     	
-    	Robot.shooter.set(-RobotMap.LOAD_SPEED);
+    	Robot.shooter.set(-0.5);
     	
     }
 

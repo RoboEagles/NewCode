@@ -54,14 +54,8 @@ public class Default_Lift extends Command {
     	
     	double setpoint = inputLPF.filter(Robot.oi.getLiftStick().getZ());
     	
-    	setpoint = (152.5 * setpoint) + 152.5;
-    	
-//    	if(teleopTimeElapsed - 135.0 > 20.0 && setpoint < maxAngleTeleop) { // 135.0 = seconds in teleop
-//    		
-//    		setpoint = maxAngleTeleop;
-//    		
-//    	}
-    	
+    	setpoint = (76.25 * setpoint) + 76.25;
+
     	Robot.lifter.setSetpoint(setpoint); // TODO: MATH HERE! ( I DON'T HAVE IT WITH ME AT THE MOMENT )
     	
 
